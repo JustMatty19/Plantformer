@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tileset Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 128
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+    - {fileID: 2800000, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+    - {fileID: 2800000, guid: 85d62d8dfc2cccb4292068fdeb50464d, type: 3}
+    - {fileID: 2800000, guid: e666f16decb42da4da2b574fe9badf12, type: 3}
+    - {fileID: 2800000, guid: 3b0e333c50a3c824cb7cd0800b48ff44, type: 3}
+    - {fileID: 2800000, guid: c730b5c2d19f2874280ce980cbc1bae6, type: 3}
+    totalSpriteSurfaceArea: 12544
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 4087539995400894046, guid: c730b5c2d19f2874280ce980cbc1bae6, type: 3}
+  - {fileID: -207227336127146148, guid: c730b5c2d19f2874280ce980cbc1bae6, type: 3}
+  - {fileID: -8692980126536061845, guid: c730b5c2d19f2874280ce980cbc1bae6, type: 3}
+  - {fileID: -2248625441031975432, guid: c730b5c2d19f2874280ce980cbc1bae6, type: 3}
+  - {fileID: -2768493270598986313, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: -8810376043660116981, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: 3723145462210163395, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: 8860946799819169956, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: 4212872740506511645, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: 7413149907215207976, guid: 608b51a3610c3b844a6bd5e1b8b85eef, type: 3}
+  - {fileID: -8022261030868143667, guid: 3b0e333c50a3c824cb7cd0800b48ff44, type: 3}
+  - {fileID: 5856870558985344633, guid: 3b0e333c50a3c824cb7cd0800b48ff44, type: 3}
+  - {fileID: 5449236117264591168, guid: 3b0e333c50a3c824cb7cd0800b48ff44, type: 3}
+  - {fileID: 21300000, guid: e666f16decb42da4da2b574fe9badf12, type: 3}
+  - {fileID: -2053787366491607928, guid: 85d62d8dfc2cccb4292068fdeb50464d, type: 3}
+  - {fileID: -3004458088077773276, guid: 85d62d8dfc2cccb4292068fdeb50464d, type: 3}
+  - {fileID: 4466772137604573538, guid: 85d62d8dfc2cccb4292068fdeb50464d, type: 3}
+  - {fileID: -8480404140891905064, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 5682393469540925955, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -7933298228110686459, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 5441223297315994465, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -4153462369580933767, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 8040196581939011165, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -1010255394613501995, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 2167505942708378944, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -8025435653959805260, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 5252699531460982423, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 7810936717752353743, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 3419707775326841495, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -1865757787562490331, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -7245433517681746672, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -72156938504300551, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 6408231970667830406, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 2403724249865808194, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -4087309676702264633, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -6056380807486736462, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -1545403180756438404, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -8442174482077232629, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 7769453424612927293, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -7869403223043187030, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -9164683769879867358, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -6936079216851816805, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 6498308080520882553, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 3931779560235752176, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -6315978382755026507, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 511961965738296472, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: 4938342473259674171, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -3309781605116015348, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  - {fileID: -6108889420429456849, guid: ab09282f4a90b154f86e377a7c68a7a4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - MoreTiles2_2
+  - MoreTiles2_3
+  - MoreTiles2_0
+  - MoreTiles2_1
+  - FlowerSheet_2
+  - FlowerSheet_3
+  - FlowerSheet_0
+  - FlowerSheet_1
+  - FlowerSheet_4
+  - FlowerSheet_5
+  - MoreTiles_2
+  - MoreTiles_0
+  - MoreTiles_1
+  - Cactus
+  - Jump_Powerup
+  - Fire_Invulnerability_Powerup
+  - Burrow_Powerup
+  - groundMiddle
+  - groundBlockTop
+  - groundCeilingRight
+  - groundLeft
+  - lavaTopLeft
+  - groundCornerTopRight
+  - groundCeilingCenter
+  - groundBlockBottom
+  - groundCornerBottomLeft
+  - lavaTopRight
+  - waterMiddleRight
+  - lavaMiddleLeft
+  - groundBlockFloating
+  - lavaMiddleRight
+  - groundWallRight
+  - lavaTop
+  - groundCornerTopLeft
+  - floatingGroundCenter
+  - groundWallLeft
+  - waterTopLeft
+  - lavaMiddle
+  - groundBlockMiddle
+  - waterTop
+  - floatingGroundLeft
+  - waterMiddleLeft
+  - waterTopRight
+  - floatingGroundRight
+  - groundCeilingLeft
+  - waterMiddle
+  - groundCornerBottomRight
+  - groundCenter
+  - groundRight
+  m_Tag: Tileset Atlas
+  m_IsVariant: 0
