@@ -16,7 +16,7 @@ public class CaterpillarController : MonoBehaviour
 
     float speed = 1.4f;
 
-    bool direction = false;
+    public bool direction = false;
 
     Vector3 left = new Vector3(-1, 1, 1);
     Vector3 right = new Vector3(1, 1, 1);

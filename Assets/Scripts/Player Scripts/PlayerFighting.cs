@@ -30,10 +30,25 @@ public class PlayerFighting : MonoBehaviour
         {
             if(rb2D.velocity.y < -0.01)
             {
-                rb2D.velocity = new Vector2(rb2D.velocity.x, PlayerController.jump);
+                rb2D.velocity = new Vector2(rb2D.velocity.x, PlayerController.jump * 1.2f);
                 if(bottomEnemyCheck.transform.tag == "MiniBoss")
                 {
-                    bottomEnemyCheck.transform.gameObject.GetComponent<CaterpillarMiniboss>().takeDamage();
+                    if(bottomEnemyCheck.transform.gameObject.GetComponent<CaterpillarMiniboss>() != null)
+                    {
+                        bottomEnemyCheck.transform.gameObject.GetComponent<CaterpillarMiniboss>().takeDamage();
+                    }
+                    else if(bottomEnemyCheck.transform.gameObject.GetComponent<BeeMiniboss>() != null)
+                    {
+                        bottomEnemyCheck.transform.gameObject.GetComponent<BeeMiniboss>().takeDamage();
+                    }
+                    else if(bottomEnemyCheck.transform.gameObject.GetComponent<GrasshopperMiniboss>() != null)
+                    {
+                        bottomEnemyCheck.transform.gameObject.GetComponent<GrasshopperMiniboss>().takeDamage();
+                    }
+                    else if(bottomEnemyCheck.transform.gameObject.GetComponent<Villain>() != null)
+                    {
+                        bottomEnemyCheck.transform.gameObject.GetComponent<Villain>().takeDamage();
+                    }
                 }
                 else
                 {

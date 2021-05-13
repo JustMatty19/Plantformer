@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndController : MonoBehaviour
 {
+    public Animator anim;
+
     void Start()
     {
+        anim.SetBool("isLeaving", false);
         StartCoroutine(wait());
     }
 
@@ -14,13 +17,30 @@ public class EndController : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("MainMenu");
+            StartCoroutine(go());
         }
     }
 
     IEnumerator wait()
     {
         yield return new WaitForSeconds(30);
+
+        anim.SetBool("isLeaving", true);
+
+        yield return new WaitForSeconds(1f);
+
+        anim.SetBool("isLeaving", false);
+
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    IEnumerator go()
+    {
+        anim.SetBool("isLeaving", true);
+
+        yield return new WaitForSeconds(1f);
+
+        anim.SetBool("isLeaving", false);
 
         SceneManager.LoadScene("MainMenu");
     }

@@ -17,7 +17,7 @@ public class BeeController : MonoBehaviour
 
     float speed = 2f;
 
-    bool direction = false;
+    public bool direction = false;
 
     bool targetSpotted = false;
 
@@ -55,12 +55,15 @@ public class BeeController : MonoBehaviour
     void enemyHitsPlayer()
     {
         float laserLength = 0.14f;
-        Vector2 leftPosition = (Vector2)transform.position - new Vector2(bc2D.bounds.extents.x, bc2D.bounds.extents.y * 2.2f);
-        Vector2 rightPosition = (Vector2)transform.position + new Vector2(bc2D.bounds.extents.x, -bc2D.bounds.extents.y * 2.2f);
+        Vector2 leftPosition = (Vector2)transform.position - new Vector2(bc2D.bounds.extents.x, bc2D.bounds.extents.y * 0.2f);
+        Vector2 rightPosition = (Vector2)transform.position + new Vector2(bc2D.bounds.extents.x, -bc2D.bounds.extents.y * 0.2f);
         int playerLayer = LayerMask.GetMask("Player");
 
         RaycastHit2D rightPlayerCheck = Physics2D.Raycast(rightPosition, Vector2.up, laserLength, playerLayer);
         RaycastHit2D leftPlayerCheck = Physics2D.Raycast(leftPosition, Vector2.up, laserLength, playerLayer);
+
+        Debug.DrawRay(leftPosition, Vector2.up * laserLength, Color.red);
+        Debug.DrawRay(rightPosition, Vector2.up * laserLength, Color.red);
 
         if(rightPlayerCheck.collider != null || leftPlayerCheck.collider != null)
         {

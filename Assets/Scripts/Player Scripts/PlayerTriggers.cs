@@ -17,8 +17,6 @@ public class PlayerTriggers : MonoBehaviour
 
     public Tilemap tilemap;
 
-    bool ready = false;
-
     void Awake()
     {
         playerController = GetComponent<PlayerController>();
@@ -64,6 +62,11 @@ public class PlayerTriggers : MonoBehaviour
                     playerController.gainJump();
                     Destroy(other.gameObject);
                     exitDoorTiles.SetActive(false);
+                }
+                if(other.name == "RoyaltyPowerup")
+                {
+                    Destroy(other.gameObject);
+                    sceneController.nextLevel("EndScene");
                 }
             }
         }

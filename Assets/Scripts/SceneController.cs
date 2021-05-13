@@ -31,6 +31,7 @@ public class SceneController : MonoBehaviour
     public void nextLevel(string level)
     {
         PlayerController.inputEnabled = false;
+        player.GetComponent<Animator>().SetBool("isBase", true);
 
         if(level == "EndScene")
         {
@@ -40,7 +41,11 @@ public class SceneController : MonoBehaviour
         }
 
         playerController.SavePlayer();
-        Destroy(player);
+        if(level != "EndScene")
+        {
+            Destroy(player);
+        }
+
         StartCoroutine(nextScene(level));
     }
 

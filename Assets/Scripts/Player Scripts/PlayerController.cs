@@ -77,6 +77,10 @@ public class PlayerController : MonoBehaviour
         {
             canBurrow = !canBurrow;
         }
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            FindObjectOfType<Villain>().GetComponent<Villain>().takeDamage();
+        }
         if(Input.GetKeyDown(KeyCode.E))
         {
             if(playerMovement.notGrounded() == 0 && canBurrow)
@@ -244,7 +248,8 @@ public class PlayerController : MonoBehaviour
             head.SetActive(true);
             body.SetActive(true);
         }
-            burrow.SetActive(true);
+
+        burrow.SetActive(true);
 
         isInvincible = false;
     }

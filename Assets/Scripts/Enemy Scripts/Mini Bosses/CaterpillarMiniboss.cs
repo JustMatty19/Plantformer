@@ -87,6 +87,7 @@ public class CaterpillarMiniboss : MonoBehaviour
         {
             lives -= 1;
             damageTaken = true;
+            StartCoroutine(iFrames());
         }
         if(lives == 0)
         {
@@ -199,5 +200,23 @@ public class CaterpillarMiniboss : MonoBehaviour
         Burrow_Powerup.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.6f);
         PlayerController.inputEnabled = true;
+    }
+
+    IEnumerator iFrames()
+    {
+        for(float i = 0; i < 1.5f; i += 0.15f)
+        {
+            if(gameObject.GetComponentInChildren<SpriteRenderer>().enabled == true)
+            {
+                gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            }
+            else
+            {
+                gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+            }
+
+            yield return new WaitForSeconds(0.15f);
+        }
+        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
     }
 }
